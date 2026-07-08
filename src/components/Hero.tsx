@@ -226,7 +226,7 @@ export default function Hero() {
                 <Code2 className="text-white" size={18} />
               </div>
               <span className="text-[10px] font-bold tracking-wider text-purple-200 uppercase font-sans">
-                Software Developer
+                Junior Software Developer
               </span>
             </motion.div>
           </motion.div>

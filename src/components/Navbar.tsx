@@ -23,7 +23,6 @@ export default function Navbar({ activeSection }: NavbarProps) {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
-    { name: "Experience", href: "#experience" },
     { name: "Certifications", href: "#certifications" },
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },

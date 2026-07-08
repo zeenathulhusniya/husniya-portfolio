@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
-import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
@@ -16,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "education", "experience", "certifications", "services", "projects", "contact"];
+      const sections = ["home", "about", "skills", "education", "certifications", "services", "projects", "contact"];
       const scrollPosition = window.scrollY + 160; // offset for better transition activation
 
       for (const section of sections) {
@@ -74,14 +73,6 @@ export default function App() {
 
         {/* Education Section */}
         <Education />
-
-        {/* Divider graphic */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gray-800/60 to-transparent" />
-        </div>
-
-        {/* Experience Section */}
-        <Experience />
 
         {/* Divider graphic */}
         <div className="max-w-7xl mx-auto px-6 md:px-12">

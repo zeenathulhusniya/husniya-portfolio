@@ -32,7 +32,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            What I Offer
+            WHAT I OFFER
           </motion.p>
           <motion.h2
             id="services-title"
@@ -42,7 +42,8 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Services Offered
+            Junior <br />
+            Software Development Services
           </motion.h2>
           <motion.div
             className="h-1 w-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"
