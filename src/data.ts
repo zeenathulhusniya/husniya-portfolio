@@ -22,20 +22,20 @@ export const personalInfo = {
 export const servicesData: Service[] = [
   {
     id: "service-1",
-    title: "Software Development",
-    description: "Developing clean, efficient, and maintainable software applications using Java and Python while following modern programming practices and writing high-quality, reliable code.",
+    title: "Software Application Development",
+    description: "Developing clean, efficient, and maintainable software applications using Java and Python while following modern programming practices, object-oriented programming principles, and industry coding standards.",
     iconName: "Cpu"
   },
   {
     id: "service-2",
     title: "Frontend Web Development",
-    description: "Building responsive, modern, and user-friendly web applications using HTML5, CSS3, JavaScript, and React, with a focus on performance and accessibility.",
+    description: "Building responsive, modern, and user-friendly web applications using HTML5, CSS3, JavaScript, and React to deliver seamless user experiences across all devices.",
     iconName: "Globe"
   },
   {
     id: "service-3",
-    title: "Database Development",
-    description: "Designing and managing SQL databases, writing optimized queries, and implementing efficient data storage solutions to support reliable software applications.",
+    title: "Database Management",
+    description: "Designing and managing SQL databases, writing optimized queries, and implementing reliable data storage solutions to support scalable software applications.",
     iconName: "Lightbulb"
   }
 ];

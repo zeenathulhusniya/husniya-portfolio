@@ -42,8 +42,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Junior <br />
-            Software Development Services
+            Junior Software Development Services
           </motion.h2>
           <motion.div
             className="h-1 w-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"
