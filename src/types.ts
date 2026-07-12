@@ -11,6 +11,8 @@ export interface Project {
   imageUrl: string;
   featured?: boolean;
   status?: string;
+  isNew?: boolean;
+  category?: string;
 }
 
 export interface Skill {

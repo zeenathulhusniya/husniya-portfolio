@@ -1,6 +1,5 @@
 import { Project, SkillCategory, Service, EducationItem, Certification, ExperienceItem } from "./types";
 import studentMgmtImg from "./assets/images/student_mgmt_mockup_1782548917866.jpg";
-import portfolioImg from "./assets/images/portfolio_mockup_1782548948052.jpg";
 import taskMgmtImg from "./assets/images/task_mgmt_mockup_1782548929708.jpg";
 
 // Personal Details
@@ -104,6 +103,33 @@ export const educationData: EducationItem[] = [
 // Projects Showcase
 export const projectsData: Project[] = [
   {
+    id: "project-booknest",
+    title: "BookNest – Modern Book Tracker",
+    category: "HTML5 • CSS3",
+    isNew: true,
+    description: "BookNest is a modern and responsive Book Tracker website built using HTML5 and CSS3. It allows users to explore trending fiction books, browse categories, view reading statistics, and enjoy a clean digital library experience with an elegant user interface.",
+    longDescription: "A beautifully structured frontend application for avid readers to curate lists, track reading time and stats, and view trending book titles in a dark, atmospheric UI with dynamic grid grids.",
+    features: [
+      "Responsive Design",
+      "Modern UI",
+      "Trending Fiction Books",
+      "Reading Dashboard",
+      "Categories Section",
+      "Featured Books",
+      "Elegant Animations",
+      "Mobile Friendly"
+    ],
+    learningOutcomes: [
+      "Implementing custom fluid column systems using CSS Grid and Flexbox layouts.",
+      "Structuring responsive and eye-safe typography setups using modern scale designs."
+    ],
+    technologies: ["HTML5", "CSS3", "Responsive Design", "CSS Grid", "Flexbox"],
+    githubUrl: "https://github.com/zeenathulhusniya/booknest",
+    liveUrl: "https://booknest-library.vercel.app/",
+    imageUrl: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80",
+    status: "Completed"
+  },
+  {
     id: "project-1",
     title: "Student Management System",
     description: "A Java and SQL based desktop application for managing student records, attendance, and academic information. This project is currently under development.",
@@ -122,26 +148,6 @@ export const projectsData: Project[] = [
     liveUrl: undefined,
     imageUrl: studentMgmtImg,
     status: "Coming Soon"
-  },
-  {
-    id: "project-2",
-    title: "Personal Portfolio Website",
-    description: "A responsive personal portfolio showcasing my skills, certificates, and journey as a Junior Software Developer.",
-    longDescription: "An optimized modern web application built using React and TypeScript, styled with Tailwind CSS, and containing detailed sections showcasing professional training, technical skills, and credential certificates.",
-    features: [
-      "Fully responsive and eye-safe design system with custom accent themes.",
-      "Interactive lightbox galleries supporting clean mobile zoom & touch gestures.",
-      "Modular components structure with strict TypeScript type-safety constraints."
-    ],
-    learningOutcomes: [
-      "Mastering Tailwind's layout configuration utility grids and variable bindings.",
-      "Constructing scalable, reusable, and responsive React component packages."
-    ],
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/zeenathulhusniya/developer-portfolio",
-    liveUrl: "https://zeenathulhusniya.vercel.app",
-    imageUrl: portfolioImg,
-    status: "Live"
   },
   {
     id: "project-3",

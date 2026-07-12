@@ -47,7 +47,7 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Projects & Future Work
+            My Projects
           </motion.h2>
           <motion.div
             className="h-1 w-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full mb-8"
@@ -92,7 +92,7 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
                 viewport={{ once: true }}
-                className="group flex flex-col justify-between bg-[#0b0f19]/40 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 hover:shadow-2xl hover:shadow-purple-500/5 transition-all duration-300"
+                className="group flex flex-col justify-between bg-[#0b0f19]/40 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/5 transition-all duration-300"
               >
                 {/* Project Image */}
                 <div className="relative aspect-video w-full overflow-hidden bg-slate-950 border-b border-slate-800/80">
@@ -108,9 +108,14 @@ export default function Projects() {
 
                   {/* Technology Overlay on Top Corner */}
                   <div className="absolute top-4 right-4 z-20 flex gap-1.5">
+                    {project.isNew && (
+                      <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-md bg-amber-500/20 text-amber-300 border border-amber-500/30 animate-pulse">
+                        New
+                      </span>
+                    )}
                     {project.status ? (
                       <span className={`text-[10px] font-mono font-bold px-2.5 py-1 rounded-md border ${
-                        project.status === "Live"
+                        project.status === "Live" || project.status === "Completed"
                           ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
                           : project.status === "Coming Soon"
                           ? "bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
@@ -128,6 +133,12 @@ export default function Projects() {
 
                 {/* Project Info */}
                 <div className="p-6 sm:p-8 flex-grow flex flex-col">
+                  {/* Category */}
+                  {project.category && (
+                    <span className="text-[10px] font-mono font-bold tracking-wider text-indigo-400 uppercase mb-1.5 block">
+                      {project.category}
+                    </span>
+                  )}
                   {/* Title & Badge */}
                   <h3 id={`project-title-${project.id}`} className="font-display text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">
                     {project.title}
