@@ -1,6 +1,7 @@
 import { Project, SkillCategory, Service, EducationItem, Certification, ExperienceItem } from "./types";
-import studentMgmtImg from "./assets/images/student_mgmt_mockup_1782548917866.jpg";
-import taskMgmtImg from "./assets/images/task_mgmt_mockup_1782548929708.jpg";
+import diceeGameImg from "./assets/images/dicee_game_mockup_1784302295746.jpg";
+import simonGameImg from "./assets/images/simon_game_mockup_1784308836918.jpg";
+import aiToolsShowcaseImg from "./assets/images/ai_tools_showcase_mockup_1784310886188.jpg";
 
 // Personal Details
 export const personalInfo = {
@@ -131,63 +132,82 @@ export const projectsData: Project[] = [
   },
   {
     id: "project-1",
-    title: "Student Management System",
-    description: "A Java and SQL based desktop application for managing student records, attendance, and academic information. This project is currently under development.",
-    longDescription: "Under development: A robust desktop management utility built with standard software design patterns, featuring transactional operations, student registers, administrative credentials verification, and editable record matrices.",
+    title: "Dicee Game",
+    category: "HTML5 • CSS3 • JavaScript",
+    isNew: true,
+    description: "Dicee Game is a fun and interactive web application built using HTML5, CSS3, and JavaScript. Players can roll two virtual dice to generate random outcomes, making it a simple project that demonstrates DOM manipulation, random number generation, and responsive web design.",
+    longDescription: "A fully responsive, fun, and interactive web implementation of a two-dice rolling board game. Includes animated outcomes and displays the winner dynamically in real-time, utilizing vanilla JavaScript DOM manipulation methodologies.",
     features: [
-      "ACID-compliant schema designed to track attendance and grade logs.",
-      "Optimized query functions executing clean CRUD statements.",
-      "Custom administrative dashboard panels built with secure inputs."
+      "Random dice roll generation",
+      "Interactive gameplay",
+      "Responsive design",
+      "Clean and modern UI",
+      "Beginner-friendly project",
+      "Fast loading"
     ],
     learningOutcomes: [
-      "Deepening object-oriented logic, thread handlers, and MVC configurations.",
-      "Learning to write performant, injection-safe SQL query expressions."
+      "Handling real-time DOM updates and event listeners efficiently in vanilla JavaScript.",
+      "Configuring randomized logic to simulate fair dice behaviors dynamically on each click."
     ],
-    technologies: ["Java", "SQL", "JDBC"],
-    githubUrl: "https://github.com/zeenathulhusniya/student-management-system",
-    liveUrl: undefined,
-    imageUrl: studentMgmtImg,
-    status: "Coming Soon"
+    technologies: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
+    githubUrl: "https://github.com/yourusername/dicee-game",
+    githubLabel: "Source Code",
+    liveUrl: "https://thedicee-game.netlify.app/",
+    imageUrl: diceeGameImg,
+    status: "Completed"
   },
   {
     id: "project-3",
-    title: "Inventory Management System",
-    description: "A database-driven application for managing products, stock levels, and sales records using Java and SQL.",
-    longDescription: "Planned: A highly optimized transactional system aimed at warehouse product tracking, categorizing stock, monitoring low-level alerts, and generating periodic reports.",
+    title: "The Simon Game",
+    category: "HTML5 • CSS3 • JavaScript",
+    isNew: true,
+    description: "The Simon Game is an interactive memory game developed using HTML5, CSS3, and JavaScript. Players must remember and repeat the sequence of colors to progress through levels. This project demonstrates JavaScript logic, DOM manipulation, event handling, and interactive UI development.",
+    longDescription: "An interactive color-sequence memory training web application inspired by the classic Hasbro handheld game. Correctly repeat progressive patterns of lighting tones and flashing colors to level up.",
     features: [
-      "Product metadata grids with pricing index and automatic tax calculators.",
-      "Alert mechanism triggers when stock levels fall below thresholds.",
-      "Interactive relational schema to query stock levels and histories."
+      "Sequence memory tracking",
+      "Dynamic color flash effects",
+      "Interactive audio tones",
+      "Responsive layout design",
+      "Event-driven gameplay loops",
+      "Level status tracking"
     ],
     learningOutcomes: [
-      "Structuring multi-table constraints, keys, and relational joins.",
-      "Designing clean user input workflows to prevent data corruption."
+      "Mastering vanilla JavaScript timers and sequence comparisons.",
+      "Binding interactive click handlers for immediate gameplay audio feedback."
     ],
-    technologies: ["Java", "SQL"],
-    githubUrl: "https://github.com/zeenathulhusniya",
-    liveUrl: undefined,
-    imageUrl: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
-    status: "Coming Soon"
+    technologies: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
+    githubUrl: "https://github.com/zeenathulhusniya/The-Simon-Game",
+    githubLabel: "GitHub Repository",
+    liveUrl: "https://thesimongamewebsite.netlify.app/",
+    imageUrl: simonGameImg,
+    status: "Completed"
   },
   {
     id: "project-4",
-    title: "Task Management Application",
-    description: "A modern web application for creating, organizing, and tracking daily tasks with a clean user interface.",
-    longDescription: "Planned: A lightweight web organizer enabling software developers to categorize project tasks, define priorities, and monitor current status streams.",
+    title: "AI Tools Showcase Website",
+    category: "HTML5 • CSS3 • JavaScript",
+    isNew: true,
+    description: "AI Tools Showcase Website is a modern and responsive web platform that displays popular AI tools with clean categorization and an attractive user interface. This project helps users explore different AI tools, understand their features, and discover useful AI solutions through a simple and organized layout.",
+    longDescription: "A beautifully curated and responsive web interface designed to highlight state-of-the-art AI applications, platforms, and API utilities. Features modular categorized listings and clean interactive showcase cards.",
     features: [
-      "Clean task columns for organizing todo, doing, and completed task lists.",
-      "Persistent cloud database sync with Firebase authentication and Firestore.",
-      "Interactive user profile configuration and task category filtering."
+      "Modern AI tools showcase interface",
+      "Tool categories and cards",
+      "Search-friendly layout",
+      "Responsive design",
+      "Clean and professional UI",
+      "Interactive components",
+      "User-friendly navigation"
     ],
     learningOutcomes: [
-      "Utilizing Firebase cloud storage systems in front-end React workflows.",
-      "Configuring flexible component states for dynamic list filters."
+      "Structuring clean semantic directory layouts and interactive search controls.",
+      "Implementing highly responsive design rules across multi-tier display grids."
     ],
-    technologies: ["React", "JavaScript", "Firebase"],
-    githubUrl: "https://github.com/zeenathulhusniya/task-manager-app",
-    liveUrl: undefined,
-    imageUrl: taskMgmtImg,
-    status: "Planned"
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "UI/UX Design"],
+    githubUrl: "https://github.com/zeenathulhusniya/AI-Tools-Showcase-Website",
+    githubLabel: "Source Code",
+    liveUrl: "https://ai-tools-showcase-website.netlify.app/",
+    imageUrl: aiToolsShowcaseImg,
+    status: "Completed"
   }
 ];
 

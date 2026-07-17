@@ -240,7 +240,7 @@ export default function Projects() {
                       className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 text-sm font-medium text-white transition-all hover:border-slate-700"
                     >
                       <Github size={16} />
-                      Code
+                      {project.githubLabel || "Code"}
                     </a>
 
                     {project.liveUrl ? (

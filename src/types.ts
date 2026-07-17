@@ -13,6 +13,7 @@ export interface Project {
   status?: string;
   isNew?: boolean;
   category?: string;
+  githubLabel?: string;
 }
 
 export interface Skill {
