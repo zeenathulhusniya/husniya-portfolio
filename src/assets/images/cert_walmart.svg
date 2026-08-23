@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1414 1000" width="1414" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+      .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1414" height="1000" fill="#ffffff" />
+
+  <!-- Top Left Walmart Global Tech Logo -->
+  <g transform="translate(95, 75)">
+    <!-- Walmart Wordmark -->
+    <text x="0" y="48" class="font-sans" font-size="52" font-weight="800" fill="#041F41" letter-spacing="-1">Walmart</text>
+    
+    <!-- Yellow Sparkburst / Star -->
+    <g transform="translate(230, 8)">
+      <!-- 6 spark rays -->
+      <rect x="18" y="0" width="6" height="16" rx="3" fill="#FFC220" />
+      <rect x="18" y="32" width="6" height="16" rx="3" fill="#FFC220" />
+      <rect x="4" y="8" width="6" height="16" rx="3" fill="#FFC220" transform="rotate(-60 7 16)" />
+      <rect x="32" y="24" width="6" height="16" rx="3" fill="#FFC220" transform="rotate(-60 35 32)" />
+      <rect x="4" y="24" width="6" height="16" rx="3" fill="#FFC220" transform="rotate(60 7 32)" />
+      <rect x="32" y="8" width="6" height="16" rx="3" fill="#FFC220" transform="rotate(60 35 16)" />
+    </g>
+
+    <!-- Global Tech text -->
+    <text x="290" y="48" class="font-sans" font-size="44" font-weight="700" fill="#041F41" letter-spacing="-0.5">Global Tech</text>
+  </g>
+
+  <!-- Divider line below logo -->
+  <line x1="95" y1="165" x2="880" y2="165" stroke="#E2E8F0" stroke-width="1.5" />
+
+  <!-- Top Right Forage Navy Ribbon Badge -->
+  <g transform="translate(995, 0)">
+    <!-- Ribbon shape with V notch -->
+    <path d="M 0 0 L 360 0 L 360 250 L 180 290 L 0 250 Z" fill="#0B2341" />
+    
+    <!-- Forage Logo inside badge -->
+    <g transform="translate(50, 55)">
+      <g transform="translate(0, 0)">
+        <path d="M 16 0 C 26 0 34 8 34 18 C 34 26 28 32 20 34 C 18 30 18 24 20 18 C 22 14 26 10 26 10 C 26 10 20 12 16 16 C 12 20 10 26 12 34 C 4 32 0 26 0 18 C 0 8 8 0 16 0 Z" fill="#ffffff" />
+        <circle cx="28" cy="24" r="5" fill="#ffffff" opacity="0.9" />
+      </g>
+      <text x="48" y="27" class="font-sans" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Forage</text>
+    </g>
+
+    <!-- Inspiring and empowering copy -->
+    <text x="180" y="155" class="font-sans" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">Inspiring and</text>
+    <text x="180" y="183" class="font-sans" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">empowering</text>
+    <text x="180" y="211" class="font-sans" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.2">future professionals</text>
+  </g>
+
+  <!-- Certificate Main Content -->
+  <g transform="translate(95, 430)">
+    <!-- Candidate Name -->
+    <text x="0" y="0" class="font-sans" font-size="52" font-weight="800" fill="#1E293B" letter-spacing="-0.5">ZEENATHUL HUSNIYA</text>
+    
+    <!-- Simulation Program Title -->
+    <text x="0" y="72" class="font-sans" font-size="46" font-weight="800" fill="#0F172A" letter-spacing="-0.5">Advanced Software Engineering Job</text>
+    <text x="0" y="132" class="font-sans" font-size="46" font-weight="800" fill="#0F172A" letter-spacing="-0.5">Simulation</text>
+    
+    <!-- Certificate of Completion Text -->
+    <text x="0" y="215" class="font-sans" font-size="30" font-weight="500" fill="#334155">Certificate of Completion</text>
+    
+    <!-- Issue Date -->
+    <text x="0" y="260" class="font-sans" font-size="25" font-weight="400" fill="#475569">August 21st, 2026</text>
+  </g>
+
+  <!-- Section Divider -->
+  <line x1="95" y1="720" x2="1290" y2="720" stroke="#E2E8F0" stroke-width="1.5" />
+
+  <!-- Practical Tasks Details (Bottom Left) -->
+  <g transform="translate(95, 755)">
+    <text x="0" y="0" class="font-sans" font-size="14.5" font-weight="500" fill="#475569">Over the period of August 2026, ZEENATHUL HUSNIYA has completed practical tasks in:</text>
+    
+    <g transform="translate(0, 32)">
+      <text x="0" y="0" class="font-sans" font-size="14" font-weight="500" fill="#1E293B">Advanced Data Structures</text>
+      <text x="0" y="24" class="font-sans" font-size="14" font-weight="500" fill="#1E293B">Software Architecture</text>
+      <text x="0" y="48" class="font-sans" font-size="14" font-weight="500" fill="#1E293B">Relational Database Design</text>
+      <text x="0" y="72" class="font-sans" font-size="14" font-weight="500" fill="#1E293B">Data Munging</text>
+    </g>
+  </g>
+
+  <!-- Dual Signature Block (Bottom Right) -->
+  <g transform="translate(890, 750)">
+    <!-- Suresh Kumar Signature -->
+    <g transform="translate(0, 0)">
+      <path d="M 10 60 Q 30 30 50 65 Q 70 30 90 60 Q 110 40 130 55" fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round" />
+      <text x="0" y="125" class="font-sans" font-size="17" font-weight="700" fill="#1E293B">Suresh Kumar</text>
+      <text x="0" y="147" class="font-sans" font-size="14" font-weight="500" fill="#64748B">Global Chief</text>
+      <text x="0" y="167" class="font-sans" font-size="14" font-weight="500" fill="#64748B">Technology Officer and</text>
+      <text x="0" y="187" class="font-sans" font-size="14" font-weight="500" fill="#64748B">Chief Development Officer</text>
+    </g>
+
+    <!-- Tom Brunskill Signature -->
+    <g transform="translate(210, 0)">
+      <path d="M 15 65 Q 25 10 35 25 Q 45 45 40 70 Q 30 90 20 85 Q 10 70 25 50 Q 55 15 75 40 Q 95 65 110 50 Q 125 35 135 60 Q 140 75 130 80 Q 120 75 128 55 Q 140 20 155 45 Q 165 65 175 75" fill="none" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round" />
+      <path d="M 50 45 L 85 42" fill="none" stroke="#94A3B8" stroke-width="1.8" />
+      <text x="0" y="125" class="font-sans" font-size="17" font-weight="700" fill="#1E293B">Tom Brunskill</text>
+      <text x="0" y="147" class="font-sans" font-size="14" font-weight="500" fill="#64748B">Co-Founder of Forage</text>
+    </g>
+  </g>
+
+  <!-- Bottom Verification Footer -->
+  <g transform="translate(95, 968)">
+    <text x="0" y="0" class="font-sans" font-size="12" font-weight="400" fill="#94A3B8" letter-spacing="0.2">
+      Enrolment Verification Code <tspan fill="#64748B">6a88065c562b59141d9757fd</tspan>   |   User Verification Code <tspan fill="#64748B">6a858607912fe6a8b895e8f1</tspan>   |   Issued by <tspan font-weight="600" fill="#475569">Forage</tspan>
+    </text>
+  </g>
+</svg>

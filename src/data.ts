@@ -2,6 +2,12 @@ import { Project, SkillCategory, Service, EducationItem, Certification, Experien
 import diceeGameImg from "./assets/images/dicee_game_mockup_1784302295746.jpg";
 import simonGameImg from "./assets/images/simon_game_mockup_1784308836918.jpg";
 import aiToolsShowcaseImg from "./assets/images/ai_tools_showcase_mockup_1784310886188.jpg";
+import skyscannerCertImg from "./assets/images/cert_skyscanner.svg";
+import hpeCertImg from "./assets/images/cert_hpe.svg";
+import h2VenturesCertImg from "./assets/images/cert_h2ventures.svg";
+import citiCertImg from "./assets/images/cert_citi.svg";
+import solutionsArchCertImg from "./assets/images/cert_solutions_arch.svg";
+import walmartCertImg from "./assets/images/cert_walmart.svg";
 
 // Personal Details
 export const personalInfo = {
@@ -256,6 +262,76 @@ export const certificationsData: Certification[] = [
     skills: ["Front-End Web Development", "JavaScript (ES6+)", "Responsive Grid System", "DOM Interactivity"],
     imageUrl: "https://i.postimg.cc/26xXRPSg/Screenshot-2026-07-05-155022.png",
     credentialUrl: "https://i.postimg.cc/26xXRPSg/Screenshot-2026-07-05-155022.png"
+  }
+];
+
+// Latest Certificates Collection (6 Certificates in ONE Folder)
+export const latestCertificatesData: Certification[] = [
+  {
+    id: "latest-cert-1",
+    title: "Skyscanner – Front-End Software Engineering Job Simulation",
+    issuer: "Skyscanner (Forage)",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed practical tasks in building a Backpack React Web App, engineering UI components, managing state, and optimizing frontend performance.",
+    skills: ["Front-End Engineering", "React", "JavaScript", "Backpack UI", "Web Optimization"],
+    imageUrl: skyscannerCertImg,
+    credentialUrl: skyscannerCertImg
+  },
+  {
+    id: "latest-cert-2",
+    title: "HPE – Software Engineering Job Simulation",
+    issuer: "Hewlett Packard Enterprise (Forage)",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed practical tasks in creating proposals for RESTful Web Services, building Java backend web services, implementing data upload handlers, and writing unit test suites.",
+    skills: ["Software Engineering", "Java", "RESTful Web Services", "Unit Testing", "System Architecture"],
+    imageUrl: hpeCertImg,
+    credentialUrl: hpeCertImg
+  },
+  {
+    id: "latest-cert-3",
+    title: "H2 Ventures – Venture Capital Job Simulation",
+    issuer: "H2 Ventures (Forage)",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed practical tasks in Venture Capital fundamentals, startup investment selection processes, tech business valuation metrics, and strategic startup growth analysis.",
+    skills: ["Venture Capital", "Tech Startups", "Due Diligence", "Startup Valuation", "Strategic Growth"],
+    imageUrl: h2VenturesCertImg,
+    credentialUrl: h2VenturesCertImg
+  },
+  {
+    id: "latest-cert-4",
+    title: "Citi – Technology Software Development Job Simulation",
+    issuer: "Citi (Forage)",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed practical engineering tasks in creating system state diagrams, writing comprehensive feature proposals, querying financial data from web APIs, and visualizing live telemetry.",
+    skills: ["FinTech Development", "System Design", "Agile Proposal", "Data Visualization", "API Querying"],
+    imageUrl: citiCertImg,
+    credentialUrl: citiCertImg
+  },
+  {
+    id: "latest-cert-5",
+    title: "Solutions Architecture Job Simulation",
+    issuer: "Forage",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed practical tasks in assessing enterprise client requirements, designing scalable cloud solutions architecture, and evaluating & presenting technical architectural recommendations.",
+    skills: ["Solutions Architecture", "Cloud Architecture", "System Design", "Technical Evaluation", "Client Needs Analysis"],
+    imageUrl: solutionsArchCertImg,
+    credentialUrl: solutionsArchCertImg
+  },
+  {
+    id: "latest-cert-6",
+    title: "Walmart Global Tech – Advanced Software Engineering Job Simulation",
+    issuer: "Walmart Global Tech (Forage)",
+    status: "Completed",
+    period: "August 2026",
+    description: "Completed advanced engineering tasks in complex data structures, high-throughput software architecture, relational database design, and high-performance data munging.",
+    skills: ["Advanced Software Engineering", "Data Structures", "Algorithms", "Relational Database Design", "Data Munging"],
+    imageUrl: walmartCertImg,
+    credentialUrl: walmartCertImg
   }
 ];
 
