@@ -8,6 +8,7 @@ import h2VenturesCertImg from "./assets/images/cert_h2ventures.svg";
 import citiCertImg from "./assets/images/cert_citi.svg";
 import solutionsArchCertImg from "./assets/images/cert_solutions_arch.svg";
 import walmartCertImg from "./assets/images/cert_walmart.svg";
+import hackerrank5StarImg from "./assets/images/cert_hackerrank_5star.svg";
 
 // Personal Details
 export const personalInfo = {
@@ -354,4 +355,18 @@ export const experienceData: ExperienceItem[] = [
     type: "INTERNSHIP"
   }
 ];
+
+// HackerRank 5-Star Problem Solving Achievement
+export const hackerRankAchievement: Certification = {
+  id: "hackerrank-5star-gold",
+  title: "🏆 HackerRank – 5-Star Problem Solving",
+  issuer: "HackerRank",
+  status: "Completed",
+  period: "2026",
+  description: "Successfully achieved 5-Star rating in Problem Solving on HackerRank.",
+  skills: ["Problem Solving (5-Star)", "Algorithms", "Data Structures", "Dynamic Programming", "C++", "Competitive Coding"],
+  imageUrl: hackerrank5StarImg,
+  credentialUrl: "https://www.hackerrank.com/profile/zeenathul_it"
+};
+
 

@@ -13,10 +13,13 @@ import {
   Building2, 
   Calendar, 
   Sparkles,
-  ShieldCheck
+  ShieldCheck,
+  Star,
+  Terminal,
+  Code2
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { certificationsData, latestCertificatesData } from "../data";
+import { certificationsData, latestCertificatesData, hackerRankAchievement } from "../data";
 import { Certification } from "../types";
 
 export default function Certifications() {
@@ -291,6 +294,160 @@ export default function Certifications() {
                 </div>
 
               </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* NEW FEATURED ACHIEVEMENT: HACKERRANK 5-STAR PROBLEM SOLVING               */}
+        {/* ========================================================================= */}
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400">
+              <Star size={16} className="fill-amber-400 text-amber-400" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-white tracking-tight">
+                Featured Achievement
+              </h3>
+              <p className="text-xs text-slate-400">
+                Competitive programming milestone & verified algorithmic problem solving mastery.
+              </p>
+            </div>
+            <div className="h-px bg-slate-800 flex-grow ml-4 hidden sm:block" />
+          </div>
+
+          <motion.div
+            id="hackerrank-achievement-card"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="group relative rounded-3xl bg-gradient-to-b from-[#131722]/90 via-[#0c101d]/90 to-[#070b14] border border-amber-500/30 hover:border-amber-400/60 transition-all duration-500 shadow-2xl shadow-amber-950/10 hover:shadow-amber-500/10 overflow-hidden"
+          >
+            {/* Top Accent Line */}
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 p-6 sm:p-10 items-center">
+              
+              {/* Left Column: Original Uncropped HackerRank Achievement Picture */}
+              <div className="lg:col-span-7">
+                <div
+                  id="hackerrank-image-frame"
+                  onClick={() => openCertModal(hackerRankAchievement, [hackerRankAchievement, ...latestCertificatesData])}
+                  className="group/img relative rounded-2xl overflow-hidden bg-slate-950 border border-amber-500/20 hover:border-amber-400/60 shadow-xl shadow-black/60 transition-all duration-300 aspect-[16/9] cursor-pointer"
+                >
+                  {/* Original Picture displayed as-is without cropping or editing */}
+                  <img
+                    src={hackerRankAchievement.imageUrl}
+                    alt={hackerRankAchievement.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-contain bg-[#1b1e2b] transition-transform duration-500 group-hover/img:scale-105"
+                  />
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-slate-950/50 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500 text-slate-950 font-bold text-xs shadow-lg shadow-black/50 transform translate-y-2 group-hover/img:translate-y-0 transition-transform duration-300">
+                      <ZoomIn size={14} />
+                      <span>View Full Resolution</span>
+                    </div>
+                  </div>
+
+                  {/* Top Floating Badge */}
+                  <div className="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 border border-amber-400/40 text-xs font-mono font-bold text-amber-300 backdrop-blur-md shadow-md">
+                    <Star size={12} className="fill-amber-400 text-amber-400" />
+                    <span>5-Star Gold Badge</span>
+                  </div>
+
+                  {/* Platform Watermark Tag */}
+                  <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-[11px] font-mono text-slate-300 backdrop-blur-sm">
+                    HackerRank
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Details & Verified Actions */}
+              <div className="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  {/* Badge Header Row */}
+                  <div className="flex flex-wrap items-center gap-2 mb-4">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-500/15 border border-amber-500/30 text-xs font-mono font-bold text-amber-300 shadow-inner">
+                      <Terminal size={13} className="text-amber-400" />
+                      <span>Competitive Coding</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono font-semibold text-emerald-400">
+                      <CheckCircle size={13} />
+                      <span>Achieved 5th Star</span>
+                    </span>
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-white group-hover:text-amber-300 transition-colors duration-300 tracking-tight mb-2">
+                    {hackerRankAchievement.title}
+                  </h3>
+
+                  {/* Issuer & Status */}
+                  <p className="text-xs font-mono text-amber-400/90 flex items-center gap-1.5 mb-4 font-semibold">
+                    <Code2 size={14} />
+                    <span>HackerRank • Problem Solving Domain</span>
+                  </p>
+
+                  {/* Description */}
+                  <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                    {hackerRankAchievement.description}
+                  </p>
+
+                  {/* Skills Tag Pills */}
+                  {hackerRankAchievement.skills && (
+                    <div className="flex flex-wrap gap-1.5 mb-6">
+                      {hackerRankAchievement.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-slate-300 group-hover:border-amber-500/30 transition-colors"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Bottom Actions */}
+                <div className="pt-4 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
+                  <a
+                    id="btn-hackerrank-profile"
+                    href="https://www.hackerrank.com/profile/zeenathul_it"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 cursor-pointer"
+                  >
+                    <span>View HackerRank Profile</span>
+                    <ExternalLink size={13} />
+                  </a>
+
+                  <a
+                    id="btn-linkedin-post"
+                    href="https://www.linkedin.com/in/zeenathul-husniya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0077B5]/20 hover:bg-[#0077B5]/30 border border-[#0077B5]/40 text-xs font-semibold text-sky-200 hover:text-white transition-all shadow-md shadow-[#0077B5]/10 cursor-pointer"
+                  >
+                    <span>LinkedIn Achievement Post</span>
+                    <ExternalLink size={13} />
+                  </a>
+
+                  <button
+                    id="btn-preview-original-pic"
+                    onClick={() => openCertModal(hackerRankAchievement, [hackerRankAchievement, ...latestCertificatesData])}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-xs font-medium text-slate-300 hover:text-white transition-colors cursor-pointer"
+                    title="View Full Resolution Original Picture"
+                  >
+                    <ZoomIn size={14} />
+                    <span>View Picture</span>
+                  </button>
+                </div>
+              </div>
+
             </div>
           </motion.div>
         </div>
