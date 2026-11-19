@@ -232,16 +232,18 @@ export default function Projects() {
 
                   {/* Buttons/Links Row */}
                   <div className="flex items-center gap-3 pt-4 border-t border-slate-800/60 mt-auto">
-                    <a
-                      id={`project-github-link-${project.id}`}
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 text-sm font-medium text-white transition-all hover:border-slate-700"
-                    >
-                      <Github size={16} />
-                      {project.githubLabel || "Code"}
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        id={`project-github-link-${project.id}`}
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 text-sm font-medium text-white transition-all hover:border-slate-700"
+                      >
+                        <Github size={16} />
+                        {project.githubLabel || "Code"}
+                      </a>
+                    )}
 
                     {project.liveUrl ? (
                       <a

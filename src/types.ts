@@ -6,7 +6,7 @@ export interface Project {
   features?: string[];
   learningOutcomes?: string[];
   technologies: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   imageUrl: string;
   featured?: boolean;

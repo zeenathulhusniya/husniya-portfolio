@@ -2,6 +2,7 @@ import { Project, SkillCategory, Service, EducationItem, Certification, Experien
 import diceeGameImg from "./assets/images/dicee_game_mockup_1784302295746.jpg";
 import simonGameImg from "./assets/images/simon_game_mockup_1784308836918.jpg";
 import aiToolsShowcaseImg from "./assets/images/ai_tools_showcase_mockup_1784310886188.jpg";
+import smartHireImg from "./assets/images/smart_hire_mockup.svg";
 import skyscannerCertImg from "./assets/images/cert_skyscanner.svg";
 import hpeCertImg from "./assets/images/cert_hpe.svg";
 import h2VenturesCertImg from "./assets/images/cert_h2ventures.svg";
@@ -110,6 +111,29 @@ export const educationData: EducationItem[] = [
 
 // Projects Showcase
 export const projectsData: Project[] = [
+  {
+    id: "project-smart-hire",
+    title: "SMART HIRE",
+    category: "Sri Lanka Remote Job Tracker • AI",
+    isNew: true,
+    description: "A smart platform designed to help Sri Lankan job seekers discover remote job opportunities, track job applications, and build their careers using AI-powered tools.",
+    longDescription: "A full-stack Sri Lanka Remote Job Tracker Application engineered with React, TypeScript, Java, Spring Boot, MySQL, and Google Gemini API to connect Sri Lankan job seekers with remote opportunities and AI-assisted career tools.",
+    features: [
+      "Remote job discovery tailored for Sri Lankan job seekers",
+      "Interactive job application tracking workflow",
+      "AI-powered career tools integrated with Google Gemini API",
+      "Full-stack architecture powered by Java, Spring Boot, and MySQL",
+      "Responsive React and TypeScript user interface"
+    ],
+    learningOutcomes: [
+      "Building a full-stack web platform combining a React + TypeScript frontend with a Java Spring Boot and MySQL backend.",
+      "Integrating the Google Gemini API to power intelligent career-building tools for job seekers."
+    ],
+    technologies: ["React", "TypeScript", "Java", "Spring Boot", "MySQL", "Google Gemini API"],
+    liveUrl: "https://smart-hire-sri-lanka.netlify.app/",
+    imageUrl: smartHireImg,
+    status: "Live"
+  },
   {
     id: "project-booknest",
     title: "BookNest – Modern Book Tracker",
